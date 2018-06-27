@@ -19,7 +19,7 @@ public class HelloSolutionTest {
 
     @Test
     public void shouldSayHello(){
-        assertTrue(helloSolution.hello("123").equals("123"));
+        assertTrue(helloSolution.hello("123").equals("Hello, World!"));
     }
 
 }

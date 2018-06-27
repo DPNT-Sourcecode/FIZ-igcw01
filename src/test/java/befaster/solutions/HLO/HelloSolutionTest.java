@@ -3,7 +3,7 @@ package befaster.solutions.HLO;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.hamcrest.MatcherAssert.assertThat;
+import static junit.framework.TestCase.assertTrue;
 
 /**
  * Created by Rob Davidson on 27/06/18.
@@ -19,10 +19,7 @@ public class HelloSolutionTest {
 
     @Test
     public void shouldSayHello(){
-
-        assertThat(helloSolution.hello("123"), equals("123"));
-
-
+        assertTrue(helloSolution.hello("123").equals("123"));
     }
 
 }

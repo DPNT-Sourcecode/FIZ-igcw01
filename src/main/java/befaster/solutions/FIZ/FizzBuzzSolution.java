@@ -14,6 +14,8 @@ public class FizzBuzzSolution {
         boolean isDeluxe = false;
         String deluxeVal = "";
 
+        isFakeDeluxe = number % 2 == 0 ? false : true;
+
         if(number>10) {
 
             if (divisibleBy3 && containsChar3) {
@@ -22,17 +24,14 @@ public class FizzBuzzSolution {
             if (divisibleBy5 && containsChar5) {
                 isDeluxe = true;
             }
+        }
 
+        if(isFakeDeluxe) {
+            deluxeVal = " fake deluxe";
+        }
 
-            isFakeDeluxe = number % 2 == 0 ? false : true;
-
-            if(isFakeDeluxe) {
-                deluxeVal = " fake deluxe";
-            }
-
-            if (!isFakeDeluxe && isDeluxe) {
-                deluxeVal = " deluxe";
-            }
+        if (!isFakeDeluxe && isDeluxe) {
+            deluxeVal = " deluxe";
         }
 
         if((divisibleBy3 || containsChar3) && (divisibleBy5 || containsChar5)){

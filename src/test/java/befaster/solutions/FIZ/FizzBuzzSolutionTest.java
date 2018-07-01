@@ -96,6 +96,17 @@ public class FizzBuzzSolutionTest {
 
     }
 
+    @Test
+    public void deluxeOnly() {
+
+        FizzBuzzSolution fbs = new FizzBuzzSolution();
+        String output = fbs.fizzBuzz(22);
+
+        Assert.assertTrue(output.equals("deluxe"));
+
+    }
+
+
 
 
 

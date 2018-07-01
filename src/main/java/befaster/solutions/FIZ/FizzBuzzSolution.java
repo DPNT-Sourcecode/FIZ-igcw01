@@ -29,6 +29,12 @@ public class FizzBuzzSolution {
         if(divisibleBy5 || containsChar5){
             return  "buzz"+appendDeluxe;
         }
+
+        if(isDeluxe){
+            return "deluxe";
+        }
+
+
         return String.valueOf(number);
     }
 

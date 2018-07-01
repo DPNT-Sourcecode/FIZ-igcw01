@@ -3,6 +3,9 @@ package befaster.solutions.FIZ;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.Arrays;
+import java.util.List;
+
 import static org.junit.Assert.*;
 
 /**
@@ -36,17 +39,15 @@ public class FizzBuzzSolutionTest {
     @Test
     public void fizzBuzzMultiplesOf3And5() {
 
-        FizzBuzzSolution fbs = new FizzBuzzSolution();
 
-        // 1-9999
+        List<Integer> valuesDivisibleBy3And5 = Arrays.asList(15, 165, 540, 2295);
 
-        for(int x  =1; x <= 9999; x++){
+        for(Integer value: valuesDivisibleBy3And5){
 
-            String output = fbs.fizzBuzz(x);
+            FizzBuzzSolution fbs = new FizzBuzzSolution();
+            String output = fbs.fizzBuzz(value);
 
-            if(output.equals("fizz buzz")){
-                System.out.println("Matching fzz fuzz "+x);
-            }
+            Assert.assertTrue(output.equals("fizz buzz"));
         }
 
     }

@@ -94,16 +94,6 @@ public class FizzBuzzSolutionTest {
         Assert.assertTrue(output.equals("fizz"));
     }
 
-    //  - If a "deluxe" number is odd, we should call him "fake deluxe" A number cannot be both "deluxe" and "fake deluxe" at the same time
-    @Test
-    public void fakeDeluxeOnly() {
-
-        FizzBuzzSolution fbs = new FizzBuzzSolution();
-        String output = fbs.fizzBuzz(1111);
-
-        Assert.assertTrue(output.equals("fake deluxe"));
-    }
-
 
     @Test
     public void numberOnlyNonDeluxe() {

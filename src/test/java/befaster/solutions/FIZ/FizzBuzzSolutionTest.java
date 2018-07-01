@@ -39,9 +39,9 @@ public class FizzBuzzSolutionTest {
 
     // - If the number is a multiple of both three and five then you should write "fizz buzz"
     @Test
-    public void fizzBuzzMultiplesOf3And5() {
+    public void fizzBuzzMultiplesOf3And5AndFakeDeluxe() {
 
-        List<Integer> valuesDivisibleBy3And5 = Arrays.asList(15, 165, 540, 2295);
+        List<Integer> valuesDivisibleBy3And5 = Arrays.asList(15, 165, 2295);
 
         for(Integer value: valuesDivisibleBy3And5){
 
@@ -52,6 +52,16 @@ public class FizzBuzzSolutionTest {
         }
 
     }
+
+    @Test
+    public void fizzBuzzMultiplesOf3And5AndDeluxe() {
+
+        FizzBuzzSolution fbs = new FizzBuzzSolution();
+        String output = fbs.fizzBuzz(540);
+
+        Assert.assertTrue(output.equals("fizz buzz deluxe"));
+    }
+
 
     // - If the number is not a multiple of five or three then write the number
     @Test
@@ -70,7 +80,7 @@ public class FizzBuzzSolutionTest {
         FizzBuzzSolution fbs = new FizzBuzzSolution();
         String output = fbs.fizzBuzz(5);
 
-        Assert.assertTrue(output.equals("buzz"));
+        Assert.assertTrue(output.equals("buzz fake deluxe"));
     }
 
 
@@ -81,20 +91,9 @@ public class FizzBuzzSolutionTest {
         FizzBuzzSolution fbs = new FizzBuzzSolution();
         String output = fbs.fizzBuzz(3);
 
-        Assert.assertTrue(output.equals("fizz"));
-    }
-
-
-    //- A number can be "fizz", "buzz" and "deluxe" at the same time. If this happens then write "fizz buzz deluxe"
-    @Test
-    public void fizzBuzzDeluxeFake() {
-
-        FizzBuzzSolution fbs = new FizzBuzzSolution();
-        String output = fbs.fizzBuzz(33);
-
         Assert.assertTrue(output.equals("fizz fake deluxe"));
-
     }
+
 
     @Test
     public void deluxeOnly() {

@@ -21,7 +21,7 @@ public class FizzBuzzSolutionTest {
         FizzBuzzSolution fbs = new FizzBuzzSolution();
         String output = fbs.fizzBuzz(9);
 
-        Assert.assertTrue(output.equals("fizz fake deluxe"));
+        Assert.assertTrue(output.equals("fizz"));
     }
 
 
@@ -80,7 +80,7 @@ public class FizzBuzzSolutionTest {
         FizzBuzzSolution fbs = new FizzBuzzSolution();
         String output = fbs.fizzBuzz(5);
 
-        Assert.assertTrue(output.equals("buzz fake deluxe"));
+        Assert.assertTrue(output.equals("buzz"));
     }
 
 
@@ -91,7 +91,7 @@ public class FizzBuzzSolutionTest {
         FizzBuzzSolution fbs = new FizzBuzzSolution();
         String output = fbs.fizzBuzz(3);
 
-        Assert.assertTrue(output.equals("fizz fake deluxe"));
+        Assert.assertTrue(output.equals("fizz"));
     }
 
     //  - If a "deluxe" number is odd, we should call him "fake deluxe" A number cannot be both "deluxe" and "fake deluxe" at the same time
@@ -103,6 +103,18 @@ public class FizzBuzzSolutionTest {
 
         Assert.assertTrue(output.equals("fake deluxe"));
     }
+
+
+    @Test
+    public void numberOnly() {
+
+        FizzBuzzSolution fbs = new FizzBuzzSolution();
+        String output = fbs.fizzBuzz(1);
+
+        Assert.assertTrue(output.equals("1"));
+    }
+
+
 
 
 }

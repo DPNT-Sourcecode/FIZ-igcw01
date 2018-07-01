@@ -32,7 +32,7 @@ public class FizzBuzzSolution {
                 }
             }
 
-            if (isDeluxe) {
+            if (!isFakeDeluxe && isDeluxe) {
                 deluxeVal = " deluxe";
             }
         }

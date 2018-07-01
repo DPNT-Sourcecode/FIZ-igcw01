@@ -8,8 +8,17 @@ public class FizzBuzzSolution {
     public String fizzBuzz(Integer number) {
 
         boolean isDeluxe = isDeluxe(number);
+        boolean isFakeDeluxe = number % 2 == 0 ? false : true; // fake deluxes are odd numbers
 
-        String appendDeluxe = isDeluxe ? " deluxe" : "";
+        String appendDeluxe = "";
+
+        if(isDeluxe && isFakeDeluxe){
+            appendDeluxe = "fake deluxe";
+        }
+        else if(isDeluxe){
+            appendDeluxe = "deluxe";
+        }
+
 
         boolean divisibleBy3 = number % 3 ==0 ? true : false;
         boolean containsChar3 = String.valueOf(number).contains("3");

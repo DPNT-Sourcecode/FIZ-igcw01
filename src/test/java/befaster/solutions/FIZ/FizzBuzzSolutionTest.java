@@ -117,12 +117,19 @@ public class FizzBuzzSolutionTest {
 
 
     @Test
-    public void largerNumberOnly() {
+    public void largerNumbers() {
 
-        FizzBuzzSolution fbs = new FizzBuzzSolution();
-        String output = fbs.fizzBuzz(811);
+        List<Integer> valuesDivisibleBy3And5 = Arrays.asList(811, 997);
 
-        Assert.assertTrue(output.equals("811"));
+        for(Integer value: valuesDivisibleBy3And5){
+
+            FizzBuzzSolution fbs = new FizzBuzzSolution();
+            String output = fbs.fizzBuzz(value);
+
+            String expectedValue = String.valueOf(value);
+
+            Assert.assertEquals(output, expectedValue);
+        }
     }
 
 

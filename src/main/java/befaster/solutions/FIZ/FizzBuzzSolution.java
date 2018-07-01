@@ -10,13 +10,13 @@ public class FizzBuzzSolution {
         boolean isDeluxe = isDeluxe(number);
         boolean isFakeDeluxe = number % 2 == 0 ? false : true; // fake deluxes are odd numbers
 
-        String appendDeluxe = "";
+        String deluxeVal = "";
 
         if(isDeluxe && isFakeDeluxe){
-            appendDeluxe = "fake deluxe";
+            deluxeVal = " fake deluxe";
         }
         else if(isDeluxe){
-            appendDeluxe = "deluxe";
+            deluxeVal = " deluxe";
         }
 
 
@@ -28,19 +28,19 @@ public class FizzBuzzSolution {
 
 
         if((divisibleBy3 || containsChar3) && (divisibleBy5 || containsChar5)){
-            return "fizz buzz"+appendDeluxe;
+            return "fizz buzz"+deluxeVal;
         }
 
         if(divisibleBy3 || containsChar3){
-            return  "fizz"+appendDeluxe;
+            return  "fizz"+deluxeVal;
         }
 
         if(divisibleBy5 || containsChar5){
-            return  "buzz"+appendDeluxe;
+            return  "buzz"+deluxeVal;
         }
 
         if(isDeluxe){
-            return "deluxe";
+            return deluxeVal.trim();
         }
 
 

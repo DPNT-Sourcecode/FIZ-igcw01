@@ -87,12 +87,12 @@ public class FizzBuzzSolutionTest {
 
     //- A number can be "fizz", "buzz" and "deluxe" at the same time. If this happens then write "fizz buzz deluxe"
     @Test
-    public void fizzBuzzDeluxe() {
+    public void fizzBuzzDeluxeFake() {
 
         FizzBuzzSolution fbs = new FizzBuzzSolution();
         String output = fbs.fizzBuzz(33);
 
-        Assert.assertTrue(output.equals("fizz deluxe"));
+        Assert.assertTrue(output.equals("fizz fake deluxe"));
 
     }
 

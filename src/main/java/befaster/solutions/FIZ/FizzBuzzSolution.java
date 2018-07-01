@@ -24,15 +24,18 @@ public class FizzBuzzSolution {
             if (divisibleBy5 && containsChar5) {
                 isDeluxe = true;
             }
+
+            if(isFakeDeluxe) {
+                deluxeVal = " fake deluxe";
+            }
+
+            if (!isFakeDeluxe && isDeluxe) {
+                deluxeVal = " deluxe";
+            }
+
         }
 
-        if(isFakeDeluxe) {
-            deluxeVal = " fake deluxe";
-        }
 
-        if (!isFakeDeluxe && isDeluxe) {
-            deluxeVal = " deluxe";
-        }
 
         if((divisibleBy3 || containsChar3) && (divisibleBy5 || containsChar5)){
 

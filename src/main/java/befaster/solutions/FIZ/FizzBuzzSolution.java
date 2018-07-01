@@ -12,7 +12,7 @@ public class FizzBuzzSolution {
         boolean containsChar5 = String.valueOf(number).contains("5");
 
 
-        if(divisibleBy3  && divisibleBy5){
+        if((divisibleBy3 || containsChar3) && (divisibleBy5 || containsChar5)){
             return "fizz buzz";
         }
 

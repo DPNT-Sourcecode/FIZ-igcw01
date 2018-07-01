@@ -43,6 +43,15 @@ public class FizzBuzzSolutionTest {
         Assert.assertTrue(output.equals("buzz"));
     }
 
+    @Test
+    public void fizzBuzzMultiplesOf5andContains5() {
+
+        FizzBuzzSolution fbs = new FizzBuzzSolution();
+        String output = fbs.fizzBuzz(5);
+
+        Assert.assertTrue(output.equals("buzz"));
+    }
+
 
     // - If the number is a multiple of both three and five then you should write "fizz buzz"
     @Test

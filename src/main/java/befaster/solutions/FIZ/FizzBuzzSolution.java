@@ -20,7 +20,7 @@ public class FizzBuzzSolution {
             return  "fizz";
         }
 
-        if(divisibleBy5){
+        if(divisibleBy5 || containsChar5){
             return  "buzz";
         }
         return String.valueOf(number);

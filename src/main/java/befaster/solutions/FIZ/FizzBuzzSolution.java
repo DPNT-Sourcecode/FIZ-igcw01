@@ -9,6 +9,8 @@ public class FizzBuzzSolution {
 
         boolean isDeluxe = isDeluxe(number);
 
+        String appendDeluxe = isDeluxe ? " deluxe" : "";
+
         boolean divisibleBy3 = number % 3 ==0 ? true : false;
         boolean containsChar3 = String.valueOf(number).contains("3");
 
@@ -17,15 +19,15 @@ public class FizzBuzzSolution {
 
 
         if((divisibleBy3 || containsChar3) && (divisibleBy5 || containsChar5)){
-            return "fizz buzz";
+            return "fizz buzz"+appendDeluxe;
         }
 
         if(divisibleBy3 || containsChar3){
-            return  "fizz";
+            return  "fizz"+appendDeluxe;
         }
 
         if(divisibleBy5 || containsChar5){
-            return  "buzz";
+            return  "buzz"+appendDeluxe;
         }
         return String.valueOf(number);
     }

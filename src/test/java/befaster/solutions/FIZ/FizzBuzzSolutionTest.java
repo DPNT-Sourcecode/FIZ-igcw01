@@ -39,7 +39,6 @@ public class FizzBuzzSolutionTest {
     @Test
     public void fizzBuzzMultiplesOf3And5() {
 
-
         List<Integer> valuesDivisibleBy3And5 = Arrays.asList(15, 165, 540, 2295);
 
         for(Integer value: valuesDivisibleBy3And5){
@@ -52,7 +51,16 @@ public class FizzBuzzSolutionTest {
 
     }
 
-
     // - If the number is not a multiple of five or three then write the number, example 1
+
+    @Test
+    public void fizzBuzzNotMultiplesOf3And5() {
+
+        FizzBuzzSolution fbs = new FizzBuzzSolution();
+        String output = fbs.fizzBuzz(2);
+
+        Assert.assertTrue(output.equals(2));
+    }
+
 
 }

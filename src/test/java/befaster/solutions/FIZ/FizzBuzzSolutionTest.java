@@ -24,6 +24,15 @@ public class FizzBuzzSolutionTest {
         Assert.assertTrue(output.equals("fizz"));
     }
 
+/*    @Test
+    public void fizzBuzzMultiplesOf3andContains3() {
+
+        FizzBuzzSolution fbs = new FizzBuzzSolution();
+        String output = fbs.fizzBuzz(9);
+
+        Assert.assertTrue(output.equals("fizz"));
+    }*/
+
     //- If the number is a multiple of five then you should write "buzz"
     @Test
     public void fizzBuzzMultiplesOf5() {
@@ -61,6 +70,11 @@ public class FizzBuzzSolutionTest {
 
         Assert.assertTrue(output.equals("26"));
     }
+
+
+ // - A number is "fizz" if it is divisible by 3 or if it has a 3 in it
+ // - A number is "buzz" if it is divisible by 5 or if it has a 5 in it
+ // - A number can be both "fizz" and "buzz" at the same time. If this happens then write "fizz buzz"
 
 
 }

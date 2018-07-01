@@ -139,8 +139,6 @@ public class FizzBuzzSolutionTest {
         Assert.assertEquals("fizz buzz fake deluxe", output);
     }
 
-
-
     @Test
     public void largerNumbers() {
 
@@ -155,6 +153,16 @@ public class FizzBuzzSolutionTest {
 
             Assert.assertEquals(output, expectedValue);
         }
+    }
+
+
+    public void fizzFakeDeluxe(){
+
+        FizzBuzzSolution fbs = new FizzBuzzSolution();
+        String output = fbs.fizzBuzz(1155);
+
+        Assert.assertEquals("buzz fake deluxe", output);
+
     }
 
 

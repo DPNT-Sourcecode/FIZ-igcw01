@@ -108,9 +108,9 @@ public class FizzBuzzSolutionTest {
     public void fizzOnly() {
 
         FizzBuzzSolution fbs = new FizzBuzzSolution();
-        String output = fbs.fizzBuzz(27);
+        String output = fbs.fizzBuzz(201);
 
-        Assert.assertEquals("fizz", output.equals("fizz"));
+        Assert.assertEquals("fizz", output);
     }
 
 

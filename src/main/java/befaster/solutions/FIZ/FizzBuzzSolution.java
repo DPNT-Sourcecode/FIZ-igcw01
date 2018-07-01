@@ -23,8 +23,9 @@ public class FizzBuzzSolution {
                 isDeluxe = true;
             }
 
-            if(!isDeluxe){
-                isFakeDeluxe = number % 2 == 0 ? false : true; // fake deluxes are odd numbers
+            if(isDeluxe){
+
+                isFakeDeluxe = number % 2 == 0 ? false : true;
 
                 if(isFakeDeluxe) {
                     deluxeVal = " fake deluxe";

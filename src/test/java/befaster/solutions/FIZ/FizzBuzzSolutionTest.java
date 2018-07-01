@@ -84,28 +84,4 @@ public class FizzBuzzSolutionTest {
         Assert.assertTrue(output.equals("fizz"));
     }
 
-
-    // A number can be both "fizz" and "buzz" at the same time. If this happens then write "fizz buzz"
-
-    @Test
-    public void fizzBuzzMatchesFizzAndBuzz() {
-
-
-        for(int x =0; x < 9999; x++){
-
-            FizzBuzzSolution fbs = new FizzBuzzSolution();
-            String output = fbs.fizzBuzz(x);
-
-            boolean contains3 = String.valueOf(x).contains("3");
-            boolean contains5 = String.valueOf(x).contains("5");
-
-            if(output.equals("fizz fuzz") && contains3 && contains5){
-                System.out.println(x);
-            }
-
-        }
-    }
-
-
-
 }

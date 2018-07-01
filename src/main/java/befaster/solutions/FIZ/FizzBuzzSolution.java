@@ -7,16 +7,14 @@ public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number) {
 
-        boolean isDeluxe = isDeluxe(number);
+        // fizz deluxe divisible by 3 AND it has a 3 in it
+        // buzz deluxe  divisible by 5 AND it has a 5 in it
+
         boolean isFakeDeluxe = number % 2 == 0 ? false : true; // fake deluxes are odd numbers
 
-        String deluxeVal = "";
-
-        if(isDeluxe && isFakeDeluxe){
-            deluxeVal = " fake deluxe";
-        }
-        else if(isDeluxe){
-            deluxeVal = " deluxe";
+        String deluxeVal = "deluxe";
+        if(isFakeDeluxe){
+            deluxeVal = "fake deluxe";
         }
 
 
@@ -28,42 +26,26 @@ public class FizzBuzzSolution {
 
 
         if((divisibleBy3 || containsChar3) && (divisibleBy5 || containsChar5)){
-            return "fizz buzz"+deluxeVal;
+            return String.format("fizz buzz %s", deluxeVal);
         }
 
         if(divisibleBy3 || containsChar3){
-            return  "fizz"+deluxeVal;
+            return  String.format("fizz %s", deluxeVal);
         }
 
         if(divisibleBy5 || containsChar5){
-            return  "buzz"+deluxeVal;
+            return  String.format("buzz %s", deluxeVal);
         }
 
-        if(isDeluxe){
-            return deluxeVal.trim();
+        if(isFakeDeluxe){
+            return  deluxeVal;
         }
-
 
         return String.valueOf(number);
     }
 
 
-    private boolean isDeluxe(Integer number){
 
-        if(number<10){
-            return false;
-        }
-
-        String stringVal = String.valueOf(number);
-
-        String[] splitIntegers = stringVal.split("");
-        Set<String> unqStrings = new HashSet<>();
-
-        for(String stringInteger: splitIntegers){
-            unqStrings.add(stringInteger);
-        }
-        return unqStrings.size() == 1 ? true : false;
-    }
 
 
 }

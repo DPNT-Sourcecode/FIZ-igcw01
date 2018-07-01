@@ -15,16 +15,23 @@ public class FizzBuzzSolution {
         String deluxeVal = "";
 
         if(number>10) {
-            isFakeDeluxe = number % 2 == 0 ? false : true; // fake deluxes are odd numbers
-            if (!isFakeDeluxe && (divisibleBy3 && containsChar3)) {
+
+            if (divisibleBy3 && containsChar3) {
                 isDeluxe = true;
             }
-            if (!isFakeDeluxe && (divisibleBy5 && containsChar5)) {
+            if (divisibleBy5 && containsChar5) {
                 isDeluxe = true;
             }
-            if (isFakeDeluxe) {
-                deluxeVal = " fake deluxe";
-            } else if (isDeluxe) {
+
+            if(!isDeluxe){
+                isFakeDeluxe = number % 2 == 0 ? false : true; // fake deluxes are odd numbers
+
+                if(isFakeDeluxe) {
+                    deluxeVal = " fake deluxe";
+                }
+            }
+
+            if (isDeluxe) {
                 deluxeVal = " deluxe";
             }
         }

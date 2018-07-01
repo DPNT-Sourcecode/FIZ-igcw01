@@ -32,7 +32,7 @@ public class FizzBuzzSolutionTest {
         FizzBuzzSolution fbs = new FizzBuzzSolution();
         String output = fbs.fizzBuzz(25);  // greater than 1- so is deluxe
 
-        Assert.assertTrue(output.equals("buzz fake deluxe"));
+        Assert.assertEquals(output, "buzz fake deluxe");
     }
 
 
@@ -48,6 +48,7 @@ public class FizzBuzzSolutionTest {
             FizzBuzzSolution fbs = new FizzBuzzSolution();
             String output = fbs.fizzBuzz(value);
 
+            //System.out.println(output);
             Assert.assertTrue(output.equals("fizz buzz fake deluxe"));
         }
 
@@ -80,7 +81,7 @@ public class FizzBuzzSolutionTest {
         FizzBuzzSolution fbs = new FizzBuzzSolution();
         String output = fbs.fizzBuzz(5);
 
-        Assert.assertTrue(output.equals("buzz"));
+        Assert.assertTrue(output.equals("buzz fake deluxe"));
     }
 
 
@@ -91,7 +92,7 @@ public class FizzBuzzSolutionTest {
         FizzBuzzSolution fbs = new FizzBuzzSolution();
         String output = fbs.fizzBuzz(3);
 
-        Assert.assertTrue(output.equals("fizz"));
+        Assert.assertTrue(output.equals("fizz fake deluxe"));
     }
 
 
@@ -104,14 +105,6 @@ public class FizzBuzzSolutionTest {
         Assert.assertTrue(output.equals("1"));
     }
 
-    @Test
-    public void fizzOnly() {
-
-        FizzBuzzSolution fbs = new FizzBuzzSolution();
-        String output = fbs.fizzBuzz(201);
-
-        Assert.assertEquals("fizz", output);
-    }
 
     @Test
     public void buzzOnly(){

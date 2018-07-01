@@ -21,7 +21,7 @@ public class FizzBuzzSolutionTest {
         FizzBuzzSolution fbs = new FizzBuzzSolution();
         String output = fbs.fizzBuzz(9);
 
-        Assert.assertTrue(output.equals("fizz"));
+        Assert.assertTrue(output.equals("fizz fake deluxe"));
     }
 
 

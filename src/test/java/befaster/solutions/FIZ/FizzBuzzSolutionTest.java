@@ -26,7 +26,7 @@ public class FizzBuzzSolutionTest {
     public void fizzBuzzMultiplesOf5() {
 
         FizzBuzzSolution fbs = new FizzBuzzSolution();
-        String output = fbs.fizzBuzz(15);
+        String output = fbs.fizzBuzz(25);
 
         Assert.assertTrue(output.equals("buzz"));
     }

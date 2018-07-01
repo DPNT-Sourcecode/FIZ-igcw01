@@ -42,7 +42,7 @@ public class FizzBuzzSolution {
             return  String.format("buzz%s", deluxeVal);
         }
 
-        if(isFakeDeluxe || isDeluxe){
+        if( isDeluxe){
             return  deluxeVal.trim();
         }
 

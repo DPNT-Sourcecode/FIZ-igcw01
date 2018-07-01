@@ -30,7 +30,7 @@ public class FizzBuzzSolutionTest {
     public void fizzBuzzMultiplesOf5() {
 
         FizzBuzzSolution fbs = new FizzBuzzSolution();
-        String output = fbs.fizzBuzz(25);
+        String output = fbs.fizzBuzz(25);  // greater than 1- so is deluxe
 
         Assert.assertTrue(output.equals("buzz fake deluxe"));
     }
@@ -106,12 +106,23 @@ public class FizzBuzzSolutionTest {
 
 
     @Test
-    public void numberOnly() {
+    public void numberOnlyNonDeluxe() {
 
         FizzBuzzSolution fbs = new FizzBuzzSolution();
         String output = fbs.fizzBuzz(1);
 
         Assert.assertTrue(output.equals("1"));
+    }
+
+
+
+    @Test
+    public void largerNumberOnly() {
+
+        FizzBuzzSolution fbs = new FizzBuzzSolution();
+        String output = fbs.fizzBuzz(811);
+
+        Assert.assertTrue(output.equals("811"));
     }
 
 

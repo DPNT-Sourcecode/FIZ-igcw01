@@ -89,15 +89,10 @@ public class FizzBuzzSolutionTest {
     @Test
     public void fizzBuzzDeluxe() {
 
-        for(int i =1; i < 99999; i++){
+        FizzBuzzSolution fbs = new FizzBuzzSolution();
+        String output = fbs.fizzBuzz(33);
 
-            FizzBuzzSolution fbs = new FizzBuzzSolution();
-            String output = fbs.fizzBuzz(i);
-
-            if(output.contains("deluxe")){
-                System.out.println("match "+output);
-            }
-        }
+        Assert.assertTrue(output.equals("fizz deluxe"));
 
     }
 

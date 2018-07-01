@@ -39,7 +39,7 @@ public class FizzBuzzSolutionTest {
 
     // - If the number is a multiple of both three and five then you should write "fizz buzz"
     @Test
-    public void fizzBuzzMultiplesOf3And5AndFakeDeluxe() {
+    public void fizzBuzzMultiplesOf3And5() {
 
         List<Integer> valuesDivisibleBy3And5 = Arrays.asList(15, 165, 2295);
 
@@ -48,7 +48,7 @@ public class FizzBuzzSolutionTest {
             FizzBuzzSolution fbs = new FizzBuzzSolution();
             String output = fbs.fizzBuzz(value);
 
-            Assert.assertTrue(output.equals("fizz buzz fake deluxe"));
+            Assert.assertTrue(output.equals("fizz buzz deluxe"));
         }
 
     }

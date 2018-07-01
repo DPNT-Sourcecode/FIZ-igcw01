@@ -1,6 +1,5 @@
 package befaster.solutions.FIZ;
 
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -39,9 +38,17 @@ public class FizzBuzzSolution {
         }
 
         String stringVal = String.valueOf(number);
-        String[] splitIntegers = stringVal.split("");
 
-        return Arrays.stream(splitIntegers).allMatch(Boolean::valueOf);
+        String[] splitIntegers = stringVal.split("");
+        Set<String> unqStrings = new HashSet<>();
+
+        for(String stringInteger: splitIntegers){
+
+            if(unqStrings.add(stringInteger)){
+                return false;
+            }
+        }
+        return true;
     }
 
 

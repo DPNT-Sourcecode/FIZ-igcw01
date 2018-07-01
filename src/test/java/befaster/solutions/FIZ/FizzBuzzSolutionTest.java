@@ -24,14 +24,14 @@ public class FizzBuzzSolutionTest {
         Assert.assertTrue(output.equals("fizz"));
     }
 
-/*    @Test
+    @Test
     public void fizzBuzzMultiplesOf3andContains3() {
 
         FizzBuzzSolution fbs = new FizzBuzzSolution();
-        String output = fbs.fizzBuzz(9);
+        String output = fbs.fizzBuzz(3);
 
         Assert.assertTrue(output.equals("fizz"));
-    }*/
+    }
 
     //- If the number is a multiple of five then you should write "buzz"
     @Test

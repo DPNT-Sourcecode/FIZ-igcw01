@@ -16,7 +16,7 @@ public class FizzBuzzSolution {
             return "fizz buzz";
         }
 
-        if(divisibleBy3){
+        if(divisibleBy3 || containsChar3){
             return  "fizz";
         }
 

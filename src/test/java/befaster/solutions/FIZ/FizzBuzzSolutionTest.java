@@ -57,9 +57,9 @@ public class FizzBuzzSolutionTest {
     public void fizzBuzzNotMultiplesOf3And5() {
 
         FizzBuzzSolution fbs = new FizzBuzzSolution();
-        String output = fbs.fizzBuzz(2);
+        String output = fbs.fizzBuzz(26);
 
-        Assert.assertTrue(output.equals(2));
+        Assert.assertTrue(output.equals("26"));
     }
 
 

@@ -1,6 +1,5 @@
 package befaster.solutions.FIZ;
 
-import befaster.runner.SolutionNotImplementedException;
 
 public class FizzBuzzSolution {
 

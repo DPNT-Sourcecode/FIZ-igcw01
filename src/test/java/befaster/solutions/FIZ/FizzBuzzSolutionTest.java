@@ -48,7 +48,7 @@ public class FizzBuzzSolutionTest {
             FizzBuzzSolution fbs = new FizzBuzzSolution();
             String output = fbs.fizzBuzz(value);
 
-            Assert.assertTrue(output.equals("fizz buzz deluxe"));
+            Assert.assertTrue(output.equals("fizz buzz fake deluxe"));
         }
 
     }
@@ -111,6 +111,22 @@ public class FizzBuzzSolutionTest {
         String output = fbs.fizzBuzz(201);
 
         Assert.assertEquals("fizz", output);
+    }
+
+    @Test
+    public void buzzOnly(){
+
+        FizzBuzzSolution fbs = new FizzBuzzSolution();
+        String output = fbs.fizzBuzz(1000);
+        Assert.assertEquals("buzz", output);
+    }
+
+    @Test
+    public void buzzDeluxe(){
+
+        FizzBuzzSolution fbs = new FizzBuzzSolution();
+        String output = fbs.fizzBuzz(500);
+        Assert.assertEquals("buzz deluxe", output);
     }
 
 

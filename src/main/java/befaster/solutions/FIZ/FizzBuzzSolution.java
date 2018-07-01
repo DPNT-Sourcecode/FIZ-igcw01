@@ -43,12 +43,9 @@ public class FizzBuzzSolution {
         Set<String> unqStrings = new HashSet<>();
 
         for(String stringInteger: splitIntegers){
-
-            if(unqStrings.add(stringInteger)){
-                return false;
-            }
+            unqStrings.add(stringInteger);
         }
-        return true;
+        return unqStrings.size() == 1 ? true : false;
     }
 
 

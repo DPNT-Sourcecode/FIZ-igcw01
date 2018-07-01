@@ -32,9 +32,26 @@ public class FizzBuzzSolutionTest {
     }
 
 
-
-
     // - If the number is a multiple of both three and five then you should write "fizz buzz"
+    @Test
+    public void fizzBuzzMultiplesOf3And5() {
+
+        FizzBuzzSolution fbs = new FizzBuzzSolution();
+
+        // 1-9999
+
+        for(int x  =1; x <= 9999; x++){
+
+            String output = fbs.fizzBuzz(x);
+
+            if(output.equals("fizz buzz")){
+                System.out.println("Matching fzz fuzz "+x);
+            }
+        }
+
+    }
+
+
     // - If the number is not a multiple of five or three then write the number, example 1
 
 }

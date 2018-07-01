@@ -44,10 +44,10 @@ public class FizzBuzzSolution {
 
         for(String stringInteger: splitIntegers){
             if(!unqStrings.add(stringInteger)){
-                return false;
+                return true;
             }
         }
-        return true;
+        return false;
     }
 
 

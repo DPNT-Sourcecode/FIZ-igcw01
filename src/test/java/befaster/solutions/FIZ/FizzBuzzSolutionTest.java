@@ -156,10 +156,11 @@ public class FizzBuzzSolutionTest {
     }
 
 
+    @Test
     public void fizzFakeDeluxe(){
 
         FizzBuzzSolution fbs = new FizzBuzzSolution();
-        String output = fbs.fizzBuzz(1155);
+        String output = fbs.fizzBuzz(3);
 
         Assert.assertEquals("buzz fake deluxe", output);
 

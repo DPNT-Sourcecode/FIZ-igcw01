@@ -23,13 +23,11 @@ public class FizzBuzzSolution {
                 isDeluxe = true;
             }
 
-            if(isDeluxe){
 
-                isFakeDeluxe = number % 2 == 0 ? false : true;
+            isFakeDeluxe = number % 2 == 0 ? false : true;
 
-                if(isFakeDeluxe) {
-                    deluxeVal = " fake deluxe";
-                }
+            if(isFakeDeluxe) {
+                deluxeVal = " fake deluxe";
             }
 
             if (!isFakeDeluxe && isDeluxe) {

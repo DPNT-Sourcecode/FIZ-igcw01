@@ -104,6 +104,15 @@ public class FizzBuzzSolutionTest {
         Assert.assertTrue(output.equals("1"));
     }
 
+    @Test
+    public void fizzOnly() {
+
+        FizzBuzzSolution fbs = new FizzBuzzSolution();
+        String output = fbs.fizzBuzz(27);
+
+        Assert.assertEquals("fizz", output.equals("fizz"));
+    }
+
 
 
     @Test
